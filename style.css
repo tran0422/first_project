@@ -9,9 +9,12 @@
 
 .parentBox {
     border: 4px solid lightblue;
+    height: 100px;
+    width: 200px;
     display: flex;
 }
 
 .childBox {
-    border: 4px solid lightgoldenrodyellow;
+    border: 4px solid lightsalmon;
+    height: 70px;
 }
