@@ -1,3 +1,4 @@
+/* Global */
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap);
 
 * {
@@ -7,9 +8,15 @@
     box-sizing: border-box;
 }
 
-nav {
+/* Header, nav and intro */
+header {
     border: 2px solid black;
-    height: 70px;
+    background-color: #eadcff;
+}
+
+nav {
+    border: 2px solid yellow;
+    /*height: 70px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +25,7 @@ nav {
 }
 
 .nav_logo {
-    border: 2px solid black;
+    border: 2px solid red;
     width: 300px;
 }
 
@@ -38,20 +45,20 @@ nav {
 }
 
 .flex_list {
-    border: 2px solid black;
+    border: 2px solid blue;
     padding-left: 16px;
 }
 
 .intro {
-    border: 2px solid yellow;
+    border: 2px solid orange;
     width: 100%;
-    max-width: 1900px;
-    background-color: #eadcff;
-    height: calc(100vh - 70px);
+    max-width: 1400px;
+    height: calc(100vh - 0px);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 24px;
+    margin: auto 0;
 }
 
 .header_change {
@@ -79,7 +86,7 @@ nav {
 }
 
 .img_size {
-    width: 900px;
+    width: 400px;
     margin: auto;
 }
 
@@ -88,14 +95,134 @@ nav {
     height: auto;
 }
 
-.parentBox {
-    border: 4px solid lightblue;
-    height: 100px;
-    width: 200px;
+/* About section */
+#aboutParent {
+    border: 4px solid red;
+    background-color: #fbffdc;
+}
+
+._h2 {
+    border: 4px solid black;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.aboutContent {
+    border: 4px solid purple;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutDiv {
+    border: 4px solid black;
+    width: 40%;
+}
+
+.aboutPg {
+    line-height: 1.5;
+}
+
+/* Discord */
+
+#discordParent {
+    border: 4px solid lightsalmon;
+    background-color: #03a2a5;
+}
+
+/* Contact */
+
+#contactParent {
+    border: 4px solid orchid;
+    background-color: #dce9ff;
+}
+
+form {
+    border: 4px solid gold;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/* Footer */
+
+footer {
+    border: 4px solid blue;
+    background-color: #aaf5ff;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerDiv {
+    border: 4px solid black;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+.footerLink {
+    border: 4px solid pink;
+    padding: 0 16px;
 }
 
 /* Best Practice for SmartPhones, iPad, Tablets */
 @media (max-width: 728px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .intro {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .forMobile {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_change {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .p_change {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .button_button {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .aboutContent {
+        flex-direction: column;
+    }
+
+    .aboutDiv {
+        width: 100%;
+    }
+
+    .img_size {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #discordParent .aboutContent {
+        flex-direction: column-reverse;
+    }
 
 }

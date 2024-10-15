@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- Header of a site -->
+    <header id="top">
         <nav>
             <img src="https://frontendsimplified.com/_nuxt/img/Frontend%20Simplified%20Logo.853fbda.png" class="nav_logo">
             <ul class="flex_unorderedList">
-                <li class="flex_list"><a href="#about" class="nav_link">about</a></li>
-                <li class="flex_list"><a href="#discord" class="nav_link">discord</a></li>
-                <li class="flex_list"><a href="#contact" class="nav_link">contact</a></li>
+                <li class="flex_list"><a href="#aboutParent" class="nav_link">about</a></li>
+                <li class="flex_list"><a href="#discordParent" class="nav_link">discord</a></li>
+                <li class="flex_list"><a href="#contactParent" class="nav_link">contact</a></li>
             </ul>
         </nav>
         <section class="intro">
-            <div>
+            <div class="forMobile">
                 <h1 class="header_change">Best Place to learn frontend dev</h1>
                 <p class="p_change">Go from absolute beginner to being a pro with a simplified process.</p>
                 <button class="button_button">Start Now</button>
@@ -25,8 +26,59 @@
             <figure class="img_size"><img src="https://novateus.com/blog/wp-content/uploads/2022/02/software-developer-gef18a0b18_1280.jpg" alt=""></figure>
         </section>
     </header>
-    <div class="parentBox">
-        <p>Parent: Hello World.</p>
-    </div>
+    <!-- Main portion of the site -->
+    <main>
+        <section id="aboutParent">
+            <h2 class="_h2">About</h2>
+            <div class="aboutContent">
+                <div class="aboutDiv">
+                    <p class="aboutPg">Paragraph tag, 3rd gen: Hello World.</p>
+                    <p class="aboutPg">Some more content. Lots of content. And so forth. Lots to talk about. Always something to talk about. Words, words, words, words, words.</p>
+                </div>
+                <figure class="img_size">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*jXusXvCfxECPU_Jh9S_E3w.jpeg" alt="">
+                </figure>
+            </div>
+        </section>
+
+        <section id="discordParent">
+            <h2 class="_h2">Discord</h2>
+            <div class="aboutContent">
+                <figure class="img_size">
+                    <img src="https://assets-prd.ignimgs.com/2022/06/17/discord-blogroll-1655488022938.jpg?width=3840" alt="">
+                </figure>
+                <div class=" aboutDiv">
+                    <p class="aboutPg">Paragraph tag, 3rd gen: Hello Discord.</p>
+                    <p class="aboutPg">Some time, you can't enough of content. Just nonstop contents. And so forth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactParent">
+            <h2 class="_h2">Contact</h2>
+            <form action="#" method="post"><!-- Enter the URL in place of #; method post for secure sending -->
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="jane.doe@email.com" required>
+
+                <label for="message">message</label>
+                <textarea type="text" name="message" id="message" placeholder="Enter your message here"></textarea>
+
+                <div class="forMobile">
+                    <button class="button_button" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer / bottom of the website -->
+     <footer>
+        <img src="https://frontendsimplified.com/_nuxt/img/Frontend%20Simplified%20Logo.853fbda.png" class="nav_logo">
+        <div class="footerDiv">
+            <a href="#aboutParent" class="footerLink">about</a>
+            <a href="#discordParent" class="footerLink">discord</a>
+            <a href="#top" class="footerLink">home</a>
+        </div>
+        <p>Copyright 2024</p>
+     </footer>
 </body>
 </html>
