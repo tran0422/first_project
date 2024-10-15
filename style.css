@@ -125,14 +125,12 @@ nav {
 }
 
 /* Discord */
-
 #discordParent {
     border: 4px solid lightsalmon;
     background-color: #03a2a5;
 }
 
 /* Contact */
-
 #contactParent {
     border: 4px solid orchid;
     background-color: #dce9ff;
@@ -154,7 +152,6 @@ input, textarea {
 }
 
 /* Footer */
-
 footer {
     border: 4px solid blue;
     background-color: #aaf5ff;
