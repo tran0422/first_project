@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header, nav and intro */
 header {
     border: 2px solid black;
